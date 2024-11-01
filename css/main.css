@@ -1,0 +1,306 @@
+/*
+Plugin Name: WP Vervemail
+Description: WP Vervemail is a simple  subscription plugin which supports Vervemail.
+Author: Marvin Chacon , Act Right
+*/
+.wp-vervemail-content {
+	padding: 26px;
+	background: #f47555;
+}
+.wp-vervemail-content h4.title,
+.wp-vervemail-content h3.title{
+	font-size: 22px;
+	color: #FFFFFF;
+	line-height: 1;
+	text-align: center;
+	text-transform: uppercase; 
+	margin-bottom: 0;
+}
+.wp-vervemail-content h4.title span,
+.wp-vervemail-content h3.title span{
+	display: inline-block;
+	font-weight: bold; 
+	font-size: 38px; 
+	margin-top: 15px;
+}
+.wp-vervemail-content p {
+	color: #fff;
+	margin: 0;
+	text-align: center;
+}
+.wp-vervemail-content p.text {
+	margin: 15px 0;
+	opacity: 0.8;
+        font-size: 16px;
+}
+.wp-vervemail-content input {
+	border: none;
+	width: 100%;
+	text-align: center;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px 0;
+	margin: 0;
+	box-shadow: none;
+	border-radius: 0;
+	height: 45px;
+}
+.wp-vervemail-content input.email-field {
+	color: #FFFFFF;
+	background: #d56144;
+}
+.wp-vervemail-content input::-webkit-input-placeholder {
+   color: inherit;
+   opacity: 0.8;
+}
+.wp-vervemail-content input:-moz-input-placeholder {
+   color: inherit;
+   opacity: 0.8;
+}
+.wp-vervemail-content input::-moz-input-placeholder {
+   color: inherit;
+   opacity: 0.8;
+}
+.wp-vervemail-content input::-ms-input-placeholder {
+   color: inherit;
+   opacity: 0.8;
+}
+.wp-vervemail-content input.submit {
+    background: #FFFFFF;
+    color: #f47555;
+    margin-top: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05); 
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+.wp-vervemail-content p.footer-text {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #666 !important;    
+}
+
+/* WP Subscribe Widget */
+.wp-vervemail-content {
+  padding: 28px !important;
+  padding-bottom: 10px !important;
+  background: #F5F1EA !important;
+  border: 2px solid #D40000 !important;
+}
+.wp-vervemail-content h4.title,
+.wp-vervemail-content h3.title{
+  font-size: 48px !important;
+  color: #D40000 !important;
+  margin-top: 5px !important;
+  letter-spacing: 1px !important;
+}
+.wp-vervemail-content p.text {
+  color: #666 !important;
+  line-height: 20px !important;
+  margin-top: 5px !important;
+  margin-bottom: 18px !important;
+}
+.wp-vervemail-content p.thanks {
+  color: #D40000 !important
+}
+.wp-vervemail-content input.email-field,
+.wp-vervemail-content input.vervemail-field{
+  color: #cccccc !important;
+  background: #fff !important;
+  height: 50px !important;
+  border: 1px solid #cccccc !important;
+  font-size: 22px !important;
+  text-align: left !important;
+  padding: 0 12px !important;
+  width: calc(100% - 26px) !important;
+  margin-bottom: 10px;
+}
+.wp-vervemail-content input.vervemail-field:last-child{
+  margin-bottom: 0px;
+}
+.wp-vervemail-content input.email-field[type=text],
+.wp-vervemail-content input.vervemail-field[type=text] {
+    float: none !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+.wp-vervemail-content input.submit {
+  background: #d40000 !important;
+  color: #fff !important;
+  height: 50px;
+  width: 192px;
+  margin: auto !important;
+  position: relative;
+  display: block;
+  margin-top: 22px !important;
+  font-size: 28px !important;
+  letter-spacing: 1px;
+  line-height: 28px;
+  max-width: 100%;  
+}
+.widget.wp_vervemail .wp-vervemail-content input.submit[type="submit"] {
+    width: 200px !important;
+    width: 100% !important;
+}
+.wp-vervemail-content .parsley-errors-list {
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  height: auto;
+  overflow: visible;
+  color: red;
+  font-style: italic;
+  position: relative;
+  top: -10px;
+  padding: 0;
+}
+.wp-vervemail-content .parsley-errors-list>li {
+  text-transform: none;
+  margin-top: 0;  
+  list-style: none !important;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Subscribe Modal Widget */
+.modal {
+  display: none;
+  overflow: auto;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  background: rgba(0, 0, 0, 0.75);
+  overflow: hidden;	
+}
+.modal .close_button {
+  position: absolute;
+  right: -44px;
+  top: -40px;
+  height: 25px;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  font-weight: bold;
+  opacity: 1;
+  font-size: 16px;
+  letter-spacing: 1px;  
+  vertical-align: middle;
+  display: flex;
+  line-height: 42px;  
+}
+.modal .close_button>a {
+  color: #fff;
+  top: -2px;
+  position: relative; 
+  margin-left: 15px;   
+}
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  transition: opacity .15s linear;
+}
+.fade.in {
+  opacity: 1;
+}
+.modal.in {
+  display: block;
+}
+.modal-dialog {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  max-width: 900px;
+  margin-top: 210px;
+}
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0,-25%);
+  -ms-transform: translate(0,-25%);
+  transform: translate(0,-25%);
+  -webkit-transition: -webkit-transform .3s ease-out;
+  -moz-transition: -moz-transform .3s ease-out;
+  -o-transition: -o-transform .3s ease-out;
+  transition: transform .3s ease-out;
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  transform: translate(0,0);
+}
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #999 !important;
+  border: 1px solid rgba(0,0,0,.2) !important;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+  box-shadow: 0 3px 9px rgba(0,0,0,.5);
+  background-clip: padding-box;
+  outline: 0;
+}
+
+
+.subscribeModal .widget.wp_vervemail {
+  list-style: none;
+  background: #F5F1EA !important;  
+  padding: 0;
+}
+.subscribeModal .widget.wp_vervemail .wp-vervemail-content {
+  padding: 10px!important;
+  margin: 8px;
+  text-align: center;
+}
+.subscribeModal .widget.wp_vervemail .wp-vervemail-content h4.title,
+.subscribeModal .widget.wp_vervemail .wp-vervemail-content h3.title{
+  font-family: Open Sans, Tahoma, Georgia, cambria, Arial, serif, sans-serif;
+  font-weight: bold;
+  font-size: 62px !important;
+  margin-top: 70px !important;  
+}
+.subscribeModal .widget.wp_vervemail .wp-vervemail-content h3.title{
+    font-size: 44px !important;
+    margin-bottom: 15px;
+}
+.subscribeModal .widget.wp_vervemail .wp-vervemail-content p.text {
+  font-size: 25px;
+  margin-bottom: 42px !important;  
+}
+.subscribeModal .widget.wp_vervemail .wp-vervemail-content input.email-field {
+max-width: 670px;
+  margin: auto !important;
+  position: relative;
+  display: block;
+  height: 80px !important;
+  font-size: 40px !important;
+  font-weight: 100;
+  padding: 0 20px !important;
+}
+.subscribeModal .widget.wp_vervemail .wp-vervemail-content input.submit {
+  margin-top: 40px !important;
+  height: 80px;  
+  width: 264px; 
+  margin-bottom: 58px !important;   
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 899px) and (min-width: 720px) {
+	.wp-vervemail-content input.submit {
+	  font-size: 22px !important;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.wp-vervemail-content input.submit {
+	  font-size: 22px !important;
+	}  
+}
